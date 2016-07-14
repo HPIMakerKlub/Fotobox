@@ -7,14 +7,11 @@ input.form-control {
     transition: all .3s ease-in-out;
     border-radius: 0;
     background-color: transparent;
-    border-width: 2px;
     color: white;
-    height: 100%;
 }
 
-.input-group.btn-default {
-    border: 2px solid #42DCA3;
-    height: 36px;
+.btn-default {
+   border-radius:0px;
 }
 
 .input-group {
