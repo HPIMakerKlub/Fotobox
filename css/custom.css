@@ -17,3 +17,39 @@ input.form-control {
 .input-group {
     margin: 3em 4em 3em 4em;
 }
+
+.user-img {
+    width: 100%;
+    max-width: 768px;
+    border: 1px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.intro-user {
+    background: url(../img/intro-bg-user.jpg) no-repeat bottom center scroll;
+    background-size: cover;
+}
+
+.modal-content {
+    background: #000;
+}
+
+.modal {
+  text-align: center;
+    background: #000;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}

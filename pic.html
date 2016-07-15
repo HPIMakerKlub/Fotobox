@@ -33,6 +33,27 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Format C:\?</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>U really want this?!</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	        <a class="btn btn-danger" role="button" href="#">Yes, definitely</a>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -54,10 +75,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -66,25 +87,21 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
+    <header class="intro intro-user">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">The Fotobox</h1>
-                        <div class="input-group">
-                             <input type="text" class="form-control" placeholder="Enter code">
-                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Get your pic</button>
-                            </span>
-                        </div><!-- /input-group -->
-                        <p class="intro-text">Made with love. Made in Potsdam.
-                            <br>The ultimate party gadget.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+                <img class="user-img" src="http://www.letsgodigital.org/images/producten/2148/testrapport/canon-eos-500d-test-photos.jpg">
+                </div>
+                <div class="row" style="margin-top:25px">
+                    <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-download fa-fw"></i> <span class="network-name">Download</span></a>
+                    </li>
+                    <li>
+                    <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-remove fa-fw"></i> <span class="network-name">Delete</span></button>
+                    </li>
+                    </ul>
                 </div>
             </div>
         </div>
